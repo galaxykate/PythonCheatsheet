@@ -88,8 +88,8 @@ print(f"allExes is: {allExes}")
 
 evenSquareList = [x for x in squareList if (x%2==0)]
 
-print(f"squareList is: {squareList}")
-print(f"evenSquareList is: {evenSquareList}")
+print(f"squareList is: {squareList}")			# [0, 1, 4, 9, 16]
+print(f"evenSquareList is: {evenSquareList}")	# [0, 4, 16]
 
 
 for i in range(5):
@@ -100,11 +100,15 @@ for number in evenSquareList:
     print (f"{number} is an even square")
 
 elements = ["water", "air", "fire", "earth", "love"]
-print(f"The first element is {elements[0]}")
-print(f"The final element is {elements[-1]}")
+print(f"The first element is {elements[0]}")	# "water"
+print(f"The final element is {elements[-1]}")	# "love"
 
-elements[0] = "skittles"
-print(f"The first element is {elements[0]}")
+# elements[0] = "skittles"
+# print(f"The first element is {elements[0]}")
+
+
+print(f"The first two elements are: {elements[0:2]}")			# ['water', 'air']
+print(f"All but the first and last elements: {elements[1:-1]}")	# ['air', 'fire', 'earth']
 
 laughter = []
 while len(laughter) < 4:
@@ -112,9 +116,7 @@ while len(laughter) < 4:
 	print(laughter)
 
 
-print(f"The middle elements are: {elements[1:3]}")
-print(f"All but the first elements: {elements[0:-1]}")
-
+# Errors
 # x = 5
 # print(elements[x])
 
