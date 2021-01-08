@@ -215,3 +215,16 @@ print(cat1)
 print(cat0.speak())
 print(cat1.speak())
 
+
+class MagicalCat(Cat):
+	catWord = "abracadabra"
+
+	def __init__(self, name):
+		super().__init__(name)
+	def speak(self):
+		return f"{self.name} says ✨'{self.catWord}'✨"
+	
+
+cat2 = MagicalCat("Mistoffelees")
+print(cat2.speak())
+

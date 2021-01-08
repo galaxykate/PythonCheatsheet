@@ -308,7 +308,31 @@ Not so helpful! So we can add a `__str__ ` method that turns it into a more usef
 		return f"{self.name}, a {self.mood} cat"
 ```
 
+
 ```
 Bustopher, a happy cat
 Grizabella, a sad cat
 ```
+
+You can also *inherit* from existing classes
+```
+
+class MagicalCat(Cat):
+	catWord = "abracadabra"
+
+	def __init__(self, name):
+		super().__init__(name)
+	def speak(self):
+		return f"{self.name} says ✨'{self.catWord}'✨"
+	
+
+cat2 = MagicalCat("Mistoffelees")
+print(cat2.speak())
+```
+
+```
+Grizabella says 'meow'
+Mistoffelees says ✨'abracadabra'✨
+```
+
+
