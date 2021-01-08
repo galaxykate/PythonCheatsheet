@@ -288,6 +288,11 @@ class Cat:
 	def speak(self):
 		return f"{self.name} says '{self.catWord}'"
 
+
+cat0 = Cat("Bustopher")
+cat1 = Cat("Grizabella")
+cat1.mood = "sad"
+
 ```
 
 
